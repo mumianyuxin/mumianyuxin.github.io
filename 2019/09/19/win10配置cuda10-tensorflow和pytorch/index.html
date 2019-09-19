@@ -56,19 +56,28 @@
   };
 </script>
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta name="keywords" content="hexo">
+  <meta name="description" content="参考知乎文章：Windows10安装tensorflow-gpu(2019.6新版本) 前言今天在笔记本上windos10系统上安装了tensorflow-gpu和pytorch，记录一下以防下次需要 环境 显卡：MX150 CPU: i5-8265u 系统：windows10 1903  准备 确认自己的显卡驱动支持的CUDA类型：  到nvidia官网上下载:  CUDA10安装包 CUDNN">
+<meta name="keywords" content="环境安装">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://teek.tech/2019/08/28/hello-world/index.html">
+<meta property="og:title" content="win10配置cuda10 tensorflow和pytorch">
+<meta property="og:url" content="http://teek.tech/2019/09/19/win10配置cuda10-tensorflow和pytorch/index.html">
 <meta property="og:site_name" content="Mumian&#39;s Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="参考知乎文章：Windows10安装tensorflow-gpu(2019.6新版本) 前言今天在笔记本上windos10系统上安装了tensorflow-gpu和pytorch，记录一下以防下次需要 环境 显卡：MX150 CPU: i5-8265u 系统：windows10 1903  准备 确认自己的显卡驱动支持的CUDA类型：  到nvidia官网上下载:  CUDA10安装包 CUDNN">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-29T02:41:09.521Z">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/0066Kbjply1g74u73kpu6j30jn0jk0ue.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/0066Kbjply1g74u7rkmi7j30k00fwq4b.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/0066Kbjply1g74ub87mqjj30be039q2t.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/0066Kbjply1g74ucpuc03j30k00f9mxu.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/0066Kbjply1g74ud45711j30k00eomxt.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/0066Kbjply1g74udaii3jj30k00f0js3.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/0066Kbjply1g74uejcm2jj30k0052mxj.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/0066Kbjply1g74ueosf60j30im06daal.jpg">
+<meta property="og:updated_time" content="2019-09-19T07:16:05.601Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-  <link rel="canonical" href="http://teek.tech/2019/08/28/hello-world/">
+<meta name="twitter:title" content="win10配置cuda10 tensorflow和pytorch">
+<meta name="twitter:description" content="参考知乎文章：Windows10安装tensorflow-gpu(2019.6新版本) 前言今天在笔记本上windos10系统上安装了tensorflow-gpu和pytorch，记录一下以防下次需要 环境 显卡：MX150 CPU: i5-8265u 系统：windows10 1903  准备 确认自己的显卡驱动支持的CUDA类型：  到nvidia官网上下载:  CUDA10安装包 CUDNN">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/0066Kbjply1g74u73kpu6j30jn0jk0ue.jpg">
+  <link rel="canonical" href="http://teek.tech/2019/09/19/win10配置cuda10-tensorflow和pytorch/">
 
 
 <script id="page-configurations">
@@ -82,7 +91,7 @@
   };
 </script>
 
-  <title>Hello World | Mumian's Blog</title>
+  <title>win10配置cuda10 tensorflow和pytorch | Mumian's Blog</title>
   <meta name="generator" content="Hexo 3.9.0">
   
 
@@ -247,7 +256,7 @@
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="http://teek.tech/2019/08/28/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://teek.tech/2019/09/19/win10配置cuda10-tensorflow和pytorch/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Roger">
@@ -259,7 +268,7 @@
       <meta itemprop="name" content="Mumian's Blog">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Hello World
+        <h1 class="post-title" itemprop="name headline">win10配置cuda10 tensorflow和pytorch
 
           
         </h1>
@@ -275,19 +284,11 @@
                 
               
 
-              <time title="Created: 2019-08-28 21:50:58" itemprop="dateCreated datePublished" datetime="2019-08-28T21:50:58+08:00">2019-08-28</time>
+              <time title="Created: 2019-09-19 14:44:46 / Modified: 15:16:05" itemprop="dateCreated datePublished" datetime="2019-09-19T14:44:46+08:00">2019-09-19</time>
             </span>
           
             
 
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2019-08-29 10:41:09" itemprop="dateModified" datetime="2019-08-29T10:41:09+08:00">2019-08-29</time>
-              </span>
             
           
             <span class="post-meta-item">
@@ -296,7 +297,7 @@
               </span>
               <span class="post-meta-item-text">In</span>
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/web-dev/" itemprop="url" rel="index"><span itemprop="name">web dev</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/环境安装/" itemprop="url" rel="index"><span itemprop="name">环境安装</span></a></span>
 
                 
                 
@@ -323,19 +324,34 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <p>参考知乎文章：<a href="https://zhuanlan.zhihu.com/p/75815405" target="_blank" rel="noopener">Windows10安装tensorflow-gpu(2019.6新版本)</a></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>今天在笔记本上windos10系统上安装了tensorflow-gpu和pytorch，记录一下以防下次需要</p>
+<h3 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h3><ul>
+<li>显卡：MX150</li>
+<li>CPU: i5-8265u</li>
+<li>系统：windows10 1903</li>
+</ul>
+<h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><ol>
+<li><p>确认自己的显卡驱动支持的CUDA类型：<br><img src="http://ww1.sinaimg.cn/large/0066Kbjply1g74u73kpu6j30jn0jk0ue.jpg" alt="1"><br><img src="http://ww1.sinaimg.cn/large/0066Kbjply1g74u7rkmi7j30k00fwq4b.jpg" alt="2"></p>
+</li>
+<li><p>到nvidia官网上下载:</p>
+<ol>
+<li><a href="https://developer.nvidia.com/cuda-toolkit-archive" target="_blank" rel="noopener">CUDA10安装包</a></li>
+<li><a href="https://developer.nvidia.com/rdp/cudnn-archive" target="_blank" rel="noopener">CUDNN安装包</a></li>
+</ol>
+</li>
+</ol>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><h4 id="1-安装-Visual-C-生成工具-2015-本人平时不怎么使用vs所以采取简洁安装"><a href="#1-安装-Visual-C-生成工具-2015-本人平时不怎么使用vs所以采取简洁安装" class="headerlink" title="1. 安装 Visual C++ 生成工具 2015(本人平时不怎么使用vs所以采取简洁安装)"></a>1. 安装 Visual C++ 生成工具 2015(本人平时不怎么使用vs所以采取简洁安装)</h4><p>进入<a href="https://link.zhihu.com/?target=https%3A//visualstudio.microsoft.com/zh-hans/vs/older-downloads/%3Frr%3Dhttps%253A%252F%252Ftensorflow.google.cn%252Finstall%252Fsource_windows" target="_blank" rel="noopener">官网下载链接</a>选择“可再发行组件和生成工具”，下载并安装：<br>    1. Microsoft Visual C++ 2015 Redistributable 更新 3；<br>    2. Microsoft 生成工具 2015 更新 3。<br><img src="http://ww1.sinaimg.cn/large/0066Kbjply1g74ub87mqjj30be039q2t.jpg" alt="3"></p>
+<h4 id="2-安装CUDA10"><a href="#2-安装CUDA10" class="headerlink" title="2. 安装CUDA10"></a>2. 安装CUDA10</h4><p>安装步骤参考<a href="https://link.zhihu.com/?target=https%3A//docs.nvidia.com/cuda/archive/10.0/cuda-installation-guide-microsoft-windows/index.html" target="_blank" rel="noopener">官方教程</a><br><img src="http://ww1.sinaimg.cn/large/0066Kbjply1g74ucpuc03j30k00f9mxu.jpg" alt="4"><br><img src="http://ww1.sinaimg.cn/large/0066Kbjply1g74ud45711j30k00eomxt.jpg" alt="undefined"><br><img src="http://ww1.sinaimg.cn/large/0066Kbjply1g74udaii3jj30k00f0js3.jpg" alt="undefined"></p>
+<p>安装完成后简单检查一下cuda的版本：<code>nvcc -V</code></p>
+<p>再看一下环境变量是否配置成功，这个应该是在安装过程中自动添加了。右键“此电脑”-“属性”-“高级系统设置”-“高级”-“环境变量”。<br><img src="http://ww1.sinaimg.cn/large/0066Kbjply1g74uejcm2jj30k0052mxj.jpg" alt="undefined"><br><img src="http://ww1.sinaimg.cn/large/0066Kbjply1g74ueosf60j30im06daal.jpg" alt="undefined"></p>
+<h4 id="3-安装cuDNN7-4-2"><a href="#3-安装cuDNN7-4-2" class="headerlink" title="3. 安装cuDNN7.4.2"></a>3. 安装cuDNN7.4.2</h4><p>下载后的安装步骤参考<a href="https://link.zhihu.com/?target=https%3A//docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html%23install-windows" target="_blank" rel="noopener">官方教程</a>。<br>解压cudnn7.4.2得到cuda文件夹，然后复制下面三个文件到 CUDA Toolkit 目录(CUDA我是默认目录安装的) 。</p>
+<pre><code>1. 复制`&lt;cuDNN路径下&gt;\cuda\bin\cudnn64_7.dll` 到 `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin.`
+2. 复制`&lt;cuDNN路径下&gt;\cuda\ include\cudnn.h` 到 `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include.`
+3. 复制 `&lt;cuDNN路径下&gt;\cuda\lib\x64\cudnn.lib` 到 `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\lib\x64.`</code></pre><h4 id="4-安装tensorflow-gpu和pytorch"><a href="#4-安装tensorflow-gpu和pytorch" class="headerlink" title="4. 安装tensorflow-gpu和pytorch"></a>4. 安装tensorflow-gpu和pytorch</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install tensorflow-gpu</span><br><span class="line">pip install torch===1.2.0 torchvision===0.4.0 -f https://download.pytorch.org/whl/torch_stable.html</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h4 id="5-测试"><a href="#5-测试" class="headerlink" title="5. 测试"></a>5. 测试</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#测试tensorflow</span><br><span class="line">import tensorflow as tf</span><br><span class="line">#初始化一个Tensorflow的常量：Hello Google Tensorflow! 字符串，并命名为greeting作为一个计算模块</span><br><span class="line">greeting = tf.constant(&apos;Hello Google Tensorflow!&apos;)</span><br><span class="line">#启动一个会话</span><br><span class="line">sess = tf.Session()</span><br><span class="line">#使用会话执行greeting计算模块</span><br><span class="line">result = sess.run(greeting)</span><br><span class="line">print(result)</span><br><span class="line">sess.close()：</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
     </div>
 
@@ -351,29 +367,13 @@
           
           <div class="post-tags">
             
-              <a href="/tags/hexo/" rel="tag"># hexo</a>
+              <a href="/tags/环境安装/" rel="tag"># 环境安装</a>
             
           </div>
         
 
         
 
-          <div class="post-nav">
-            <div class="post-nav-next post-nav-item">
-              
-            </div>
-
-            <span class="post-nav-divider"></span>
-
-            <div class="post-nav-prev post-nav-item">
-              
-                <a href="/2019/08/29/test1/" rel="prev" title="test1">
-                  test1 <i class="fa fa-chevron-right"></i>
-                </a>
-              
-            </div>
-          </div>
-        
       </footer>
     
   </div>
@@ -421,7 +421,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#环境"><span class="nav-number">1.1.</span> <span class="nav-text">环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#准备"><span class="nav-number">1.2.</span> <span class="nav-text">准备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">1.3.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-安装-Visual-C-生成工具-2015-本人平时不怎么使用vs所以采取简洁安装"><span class="nav-number">1.3.1.</span> <span class="nav-text">1. 安装 Visual C++ 生成工具 2015(本人平时不怎么使用vs所以采取简洁安装)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-安装CUDA10"><span class="nav-number">1.3.2.</span> <span class="nav-text">2. 安装CUDA10</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-安装cuDNN7-4-2"><span class="nav-number">1.3.3.</span> <span class="nav-text">3. 安装cuDNN7.4.2</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-安装tensorflow-gpu和pytorch"><span class="nav-number">1.3.4.</span> <span class="nav-text">4. 安装tensorflow-gpu和pytorch</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-测试"><span class="nav-number">1.3.5.</span> <span class="nav-text">5. 测试</span></a></li></ol></li></ol></li></ol></div>
         
       </div>
       <!--/noindex-->
@@ -436,7 +436,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -466,9 +466,7 @@
         
           
         
-          
-        
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">1</span>
         <span class="site-state-item-name">tags</span>
         
       </div>
@@ -610,7 +608,7 @@
       repo: 'BlogComment',
       owner: 'mumianyuxin',
       admin: ['mumianyuxin'],
-      id: '74788b84a9d80b4695ea4fd501fcb24e',
+      id: '67b09244db5ce82693e4087bcca1e6a4',
         language: window.navigator.language || window.navigator.userLanguage,
       
       distractionFreeMode: 'true'
